@@ -4,15 +4,15 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{daemon-kit}
-  s.version = "0.1.8.1"
+  s.name = %q{amqp-daemon-kit}
+  s.version = "1.0.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = ["kenneth.kalmer@gmail.com"]
-  s.date = %q{2010-08-04}
+  s.authors = ["jpsilvashy@gmail.com", "kenneth.kalmer@gmail.com"]
+  s.date = %q{2011-04-17}
   s.default_executable = %q{daemon-kit}
-  s.description = %q{daemon-kit aims to simplify creating Ruby daemons by providing a sound application skeleton (through a generator), task specific generators (jabber bot, etc) and robust environment management code.}
-  s.email = %q{kenneth.kalmer@gmail.com}
+  s.description = %q{amqp-daemon-kit is derived from the larger daemon-kit gem with updates to modernize and optimize integration with new AMQP protocols.}
+  s.email = %q{jpsilvashy@gmail.com}
   s.executables = ["daemon-kit"]
   s.extra_rdoc_files = [
     "Configuration.txt",

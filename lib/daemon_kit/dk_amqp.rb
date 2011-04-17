@@ -32,8 +32,9 @@ module DaemonKit
       DaemonKit.trap('TERM') { ::AMQP.stop { ::EM.stop } }
 
       # Start our event loop and AMQP client
-      DaemonKit.logger.debug("AMQP.start(#{@config.inspect})")
-      ::AMQP.start(@config, &block)
+      DaemonKit.logger.debug("AMQP.connect(#{@config.inspect})")
+      ::AMQP.connect(@config, &block)
+      # ::AMQP.start(@config, &block)
     end
   end
 end
